@@ -1,7 +1,7 @@
 package AkilliCihaz;
 
 public class AnaIslemPlatformu{
-    ParcaFactory parcaFactory = new ParcaFactory();
+    IParcaFactory parcaFactory = new ParcaFactory();
     ISicaklikAlgilayici olcer =(ISicaklikAlgilayici) parcaFactory.parcaOlustur(parcaTipi.sicaklikAlgilayici);
     IEyleyici eyleyici =(IEyleyici) parcaFactory.parcaOlustur(parcaTipi.eyleyici);
     boolean sogutucuAcik = false;
